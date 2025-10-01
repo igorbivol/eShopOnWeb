@@ -19,6 +19,8 @@ jobs:
     steps:
     #checkout the repository
     - uses: actions/checkout@v4
+    - name: dotnet --info
+      run: dotnet --info
     #prepare runner for desired .net version SDK
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
